@@ -52,7 +52,6 @@ def frameDifference(self, prev):
 		diff = self - prev
 		m = diff != 0
 		m = (m + [0])*255
-		#diff = curr_frame - prev_frame
 		cv2.imshow("image window", diff - 100)
 	except:
 		print("no prev_frame yet")
